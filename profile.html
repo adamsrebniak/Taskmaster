@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Profile & Personalization</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo" aria-label="Platform Logo">🤖 <span>AI UseCases</span></div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <a href="index.html">Home</a>
+      <a href="#">My Saved</a>
+      <a href="#">Recommended</a>
+      <a href="profile.html" class="active">Profile</a>
+      <a href="#" class="about-link">About</a>
+    </nav>
+    <form class="search-bar" role="search" aria-label="Global Search">
+      <input type="search" placeholder="Search use cases..." aria-label="Search use cases" />
+      <button type="submit" aria-label="Search"><span>🔍</span></button>
+    </form>
+    <div class="user-actions">
+      <button class="login-btn">Logout</button>
+    </div>
+  </header>
+  <main class="profile-main">
+    <section class="profile-section">
+      <h1 style="word-break:break-word;overflow-wrap:break-word;">Profile Settings</h1>
+      <form class="profile-form" autocomplete="off">
+        <fieldset>
+          <legend style="word-break:break-word;overflow-wrap:break-word;">Personal Information</legend>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" value="Jane Doe" />
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" value="jane.doe@email.com" disabled />
+          <label for="company">Company Name</label>
+          <input type="text" id="company" name="company" value="Acme Corp" />
+          <label for="jobtitle">Job Title</label>
+          <input type="text" id="jobtitle" name="jobtitle" value="AI Product Manager" />
+          <button type="submit" class="save-btn">Save Changes</button>
+        </fieldset>
+        <fieldset>
+          <legend style="word-break:break-word;overflow-wrap:break-word;">My Interests</legend>
+          <p>Select industries and technologies to personalize your recommendations.</p>
+          <label>Industries</label>
+          <div class="multi-select">
+            <label><input type="checkbox" checked /> Finance</label>
+            <label><input type="checkbox" /> Healthcare</label>
+            <label><input type="checkbox" /> Retail</label>
+            <label><input type="checkbox" /> Manufacturing</label>
+          </div>
+          <label>AI Technology Types</label>
+          <div class="multi-select">
+            <label><input type="checkbox" checked /> NLP</label>
+            <label><input type="checkbox" /> Computer Vision</label>
+            <label><input type="checkbox" /> Chatbots</label>
+            <label><input type="checkbox" /> Predictive Analytics</label>
+          </div>
+          <label>Business Areas</label>
+          <div class="multi-select">
+            <label><input type="checkbox" checked /> Sales</label>
+            <label><input type="checkbox" /> Marketing</label>
+            <label><input type="checkbox" /> Operations</label>
+          </div>
+          <button type="submit" class="save-btn">Update Preferences</button>
+        </fieldset>
+        <fieldset>
+          <legend style="word-break:break-word;overflow-wrap:break-word;">Account Settings & Privacy</legend>
+          <label for="password">Change Password</label>
+          <input type="password" id="password" name="password" placeholder="New password" />
+          <label><input type="checkbox" checked /> Receive newsletter and tailored updates</label>
+          <p class="privacy-info">Your data is used to personalize your experience. <a href="#" rel="noopener">Privacy Policy</a></p>
+          <button type="button" class="danger-btn">Request Account Deletion</button>
+          <button type="button" class="secondary-btn">Download My Data</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <small>&copy; 2024 AI UseCases Platform. All rights reserved.</small>
+  </footer>
+</body>
+</html> 

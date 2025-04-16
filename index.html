@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>AI Use Cases Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo" aria-label="Platform Logo">🤖 <span>AI UseCases</span></div>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="#">My Saved</a>
+      <a href="#">Recommended</a>
+      <a href="profile.html">Profile</a>
+      <a href="#" class="about-link">About</a>
+    </nav>
+    <form class="search-bar" role="search" aria-label="Global Search">
+      <input type="search" placeholder="Search use cases..." aria-label="Search use cases" />
+      <button type="submit" aria-label="Search"><span>🔍</span></button>
+    </form>
+    <div class="user-actions">
+      <button class="login-btn">Login</button>
+      <button class="register-btn">Register</button>
+    </div>
+  </header>
+  <div class="dashboard-layout">
+    <aside class="sidebar" aria-label="Filters and Navigation">
+      <nav>
+        <ul>
+          <li><strong>Categories</strong></li>
+          <li><button class="sidebar-link" aria-current="page">All Industries</button></li>
+          <li><button class="sidebar-link">Finance</button></li>
+          <li><button class="sidebar-link">Healthcare</button></li>
+          <li><button class="sidebar-link">Retail</button></li>
+          <li><button class="sidebar-link">Manufacturing</button></li>
+        </ul>
+        <hr />
+        <ul>
+          <li><strong>AI Technologies</strong></li>
+          <li><button class="sidebar-link">NLP</button></li>
+          <li><button class="sidebar-link">Computer Vision</button></li>
+          <li><button class="sidebar-link">Chatbots</button></li>
+          <li><button class="sidebar-link">Predictive Analytics</button></li>
+        </ul>
+        <hr />
+        <a href="#" class="sidebar-link about">How it Works?</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <section class="filters-section" aria-label="Filters and Sorting">
+        <button class="filter-btn" aria-haspopup="true" aria-expanded="false">Filter</button>
+        <select aria-label="Sort by" class="sort-select">
+          <option>Newest</option>
+          <option>Highest Rated</option>
+          <option>Alphabetical</option>
+        </select>
+      </section>
+      <section class="recommendations" aria-label="Recommended for You">
+        <h2>Recommended for You</h2>
+        <div class="tiles-grid">
+          <article class="usecase-tile" tabindex="0" aria-labelledby="uc1-title">
+            <div class="tile-icon" aria-hidden="true">💳</div>
+            <h3 id="uc1-title" style="word-break:break-word;overflow-wrap:break-word;">Fraud Detection</h3>
+            <div class="tile-tags">
+              <span class="tag">Finance</span>
+              <span class="tag tech">NLP</span>
+            </div>
+            <p class="tile-summary" style="word-break:break-word;overflow-wrap:break-word;">Cost Savings | Improved Security</p>
+            <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+          </article>
+          <article class="usecase-tile" tabindex="0" aria-labelledby="uc2-title">
+            <div class="tile-icon" aria-hidden="true">🩺</div>
+            <h3 id="uc2-title" style="word-break:break-word;overflow-wrap:break-word;">Medical Image Analysis</h3>
+            <div class="tile-tags">
+              <span class="tag">Healthcare</span>
+              <span class="tag tech">Computer Vision</span>
+            </div>
+            <p class="tile-summary" style="word-break:break-word;overflow-wrap:break-word;">Faster Diagnosis | Higher Accuracy</p>
+            <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+          </article>
+          <article class="usecase-tile" tabindex="0" aria-labelledby="uc3-title">
+            <div class="tile-icon" aria-hidden="true">🛒</div>
+            <h3 id="uc3-title" style="word-break:break-word;overflow-wrap:break-word;">Personalized Recommendations</h3>
+            <div class="tile-tags">
+              <span class="tag">Retail</span>
+              <span class="tag tech">Predictive Analytics</span>
+            </div>
+            <p class="tile-summary" style="word-break:break-word;overflow-wrap:break-word;">Boost Sales | Enhance Experience</p>
+            <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+          </article>
+        </div>
+      </section>
+      <nav class="pagination" aria-label="Pagination">
+        <button aria-label="Previous page" disabled>&lt;</button>
+        <button aria-current="page">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button aria-label="Next page">&gt;</button>
+      </nav>
+    </main>
+  </div>
+  <footer class="footer">
+    <small>&copy; 2024 AI UseCases Platform. All rights reserved.</small>
+  </footer>
+</body>
+</html> 
